@@ -4,8 +4,13 @@ import './SettingsLeft.css';
 
 class SettingsLeft extends Component {
 	render() {
+		var i = -1;
+		var inc = function(){
+			i++;
+			return i - 1;
+		}
 		const list = this.props.tabs.map((name) =>
-				<SettingsTab name={name} key={Math.random()}/>
+				<SettingsTab name={name} key={Math.random()} selected={inc() == this.props.selected} index={i}/>
 			)
 
 		return (

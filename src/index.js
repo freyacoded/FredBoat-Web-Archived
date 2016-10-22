@@ -10,9 +10,9 @@ ReactDOM.render(
 	document.getElementById("UserDisplay")
 );
 
-var tabs = ["tab1", "tab2", "tab3"];
+var tabs = ["tab1", "tab2", "tab3", "tab4"];
 
 ReactDOM.render(
-	<SettingsLeft tabs={tabs}/>,
+	<SettingsLeft tabs={tabs} selected={0}/>,
 	document.getElementById("page")
 );
