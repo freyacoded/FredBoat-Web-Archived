@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Fugaz+One');
 
 body {
- 	margin: 0;
- 	padding: 0;
- 	height:100%;
- 	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	font-family: sans-serif;
 }
 
 p {
-    margin: 0;
-    padding: 10px;
+	margin: 0;
+	padding: 10px;
 }
 
 a {
@@ -33,20 +34,19 @@ a {
 	margin-right: auto;
 	position: absolute;
 	left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 32px;
-    font-size: 32px;
-    font-family:'Fugaz One';
-    text-align: center;
-    color: white;
-    padding-top: 6px;
+	top: 0px;
+	width: 100%;
+	height: 32px;
+	font-size: 32px;
+	font-family:'Fugaz One';
+	text-align: center;
+	color: white;
+	padding-top: 6px;
 }
 
 .logoSection {
 	background-color: #1CBFE2;
 	height: 256px;
-	width: 100%;
 }
 
 .logo {
@@ -61,17 +61,23 @@ a {
 .page {
 	padding-bottom :32px;
 	width: 100%;
+	min-height: calc(100vh - 64px - 32px - 256px);
+	display: flex;
+}
+
+.settingsLeft {
+	background-color: #2e3136;
+	width: 190px;
 }
 
 .footer {
 	position: absolute;
-   	bottom: 0;
+	bottom: 0;
 	height: 32px;
 	width: 100%;
-	background-color: #2C2C2C;
+	background-color: #191919;
 	bottom: 0;
-
-	
+	/*box-shadow: 0 -5px 2px #191919;*/
 }
 
 .footerText {
