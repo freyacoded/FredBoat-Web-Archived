@@ -12,6 +12,10 @@ p {
     padding: 10px;
 }
 
+a {
+	color: inherit;
+}
+
 .wrapper {
 	height: auto;
 	min-height: 100%;
@@ -66,4 +70,13 @@ p {
 	width: 100%;
 	background-color: #2C2C2C;
 	bottom: 0;
+
+	
+}
+
+.footerText {
+	/* Text */
+	text-align: center;
+	color: white !important;
+	padding-top: 6px;
 }
