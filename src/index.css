@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Fugaz+One');
+@import url('https://fonts.googleapis.com/css?family=Fugaz+One|Lato');
+
+a, p, div {
+	font-family: Helvetica, Arial;
+}
 
 body {
 	margin: 0;
@@ -68,6 +72,18 @@ a {
 .settingsLeft {
 	background-color: #2e3136;
 	width: 190px;
+	color: white;
+	font-weight: 500;
+}
+
+.settingsTitle {
+	padding-left: 12px;
+	padding-top: 12px;
+	padding-bottom: 8px;
+	font-size: 24px;
+	font-family: Lato;
+	text-transform: uppercase;
+	box-shadow: 0 2px 0 rgba(0,0,0,.05), inset 0 -2px 0 rgba(0,0,0,.1);
 }
 
 .footer {
