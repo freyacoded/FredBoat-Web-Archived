@@ -4,9 +4,9 @@ import "./SettingsTab.css";
 class SettingsTab extends Component {
 	render() {
 		return (
-			<div class="SettingsTab">
-				<div class="tabDecoratorParent">
-					<div class="tabDecorator"></div>
+			<div className="SettingsTab">
+				<div className="tabDecoratorParent">
+					<div className="tabDecorator"></div>
 				</div>
 				<div>{this.props.name}</div>
 			</div>
