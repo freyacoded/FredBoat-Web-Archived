@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-//import App from "./components/App";
 import UserDisplay from "./components/UserDisplay";
 import SettingsLeft from "./components/SettingsLeft";
 import Account from "./control/Account";
