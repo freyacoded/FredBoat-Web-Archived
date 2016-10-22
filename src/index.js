@@ -1,0 +1,11 @@
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./components/App";
+import UserDisplay from "./components/UserDisplay";
+import Account from "./control/Account"
+import "./index.css";
+
+ReactDOM.render(
+  <UserDisplay username="Fre_d 👻#2939" avatarUrl="https://cdn.discordapp.com/avatars/81011298891993088/f59d807bd63741ca24cb2556518aa35a.jpg"/>,
+  document.getElementById("UserDisplay")
+);

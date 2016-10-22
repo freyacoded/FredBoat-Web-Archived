@@ -1,0 +1,24 @@
+.loggedUserAvatar {
+	border-radius: 50%;
+	height: 42px;
+	background-size: 42px 42px;
+	width: 42px;
+}
+
+.UserDisplay {
+	padding-left: 9px;
+	padding-top: 9px;
+}
+
+.username {
+	color: white;
+	font-size: 24px;
+	width: 200px;
+	height: 100%;
+	vertical-align: baseline;
+	display: flex;
+	position: relative;
+	left: 52px;
+	display:flex;
+	align-items:center;
+}

@@ -1,0 +1,51 @@
+body {
+ 	margin: 0;
+ 	padding: 0;
+ 	height:100%;
+ 	font-family: sans-serif;
+}
+
+p {
+    margin: 0;
+    padding: 10px;
+}
+
+.wrapper {
+	height: auto;
+	min-height: 100%;
+	position: relative;
+}
+
+.header {
+	height: 64px;
+	width: 100%;
+	background-color: #2C2C2C;
+}
+
+.logoSection {
+	background-color: #1CBFE2;
+	height: 256px;
+	width: 100%;
+}
+
+.logo {
+	margin: auto;
+	display: block;
+	height: 232px;
+	width: 232px;
+	padding-top: 6px;
+}
+
+.page {
+	padding-bottom :32px;
+	width: 100%;
+}
+
+.footer {
+	position: absolute;
+   	bottom: 0;
+	height: 32px;
+	width: 100%;
+	background-color: #2C2C2C;
+	bottom: 0;
+}
