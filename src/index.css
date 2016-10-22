@@ -51,6 +51,7 @@ p {
 	height: 232px;
 	width: 232px;
 	padding-top: 6px;
+	display: block !important;
 }
 
 .page {
