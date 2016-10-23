@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import UserDisplay from "./components/UserDisplay";
 import SettingsLeft from "./components/SettingsLeft";
 import Account from "./control/Account";
+import TabManager from "./control/TabManager";
 import "./index.css";
 
 ReactDOM.render(
@@ -10,9 +11,4 @@ ReactDOM.render(
 	document.getElementById("UserDisplay")
 );
 
-var tabs = ["tab1", "tab2", "tab3", "tab4"];
-
-ReactDOM.render(
-	<SettingsLeft tabs={tabs} selected={0}/>,
-	document.getElementById("page")
-);
+TabManager.renderTabs();

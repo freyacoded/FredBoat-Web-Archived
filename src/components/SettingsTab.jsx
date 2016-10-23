@@ -1,14 +1,20 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
+import TabManager from "../control/TabManager";
 import "./SettingsTab.css";
 
 class SettingsTab extends Component {
 	onClick = () => {
-		console.log(this.props.index)
+		TabManager.setCurrentTab(this.props.index);
 	}
 
 	render() {
+		const selected = this.props.index == TabManager.currentTab;
+
 		return (
-			<div className={this.props.selected ? "SettingsTab selected" : "SettingsTab"} onClick={this.onClick}>
+			<div
+			className={selected ? "SettingsTab selected" : "SettingsTab"}
+			style={selected ? {} : {cursor: "pointer"}}
+			onClick={this.onClick}>
 				<div className="tabDecoratorParent">
 					<div className="tabDecorator"></div>
 				</div>

@@ -7,10 +7,10 @@ class SettingsLeft extends Component {
 		var i = -1;
 		var inc = function(){
 			i++;
-			return i - 1;
+			return i;
 		}
 		const list = this.props.tabs.map((name) =>
-				<SettingsTab name={name} key={Math.random()} selected={inc() == this.props.selected} index={i}/>
+				<SettingsTab name={name} key={Math.random()} index={inc()}/>
 			)
 
 		return (

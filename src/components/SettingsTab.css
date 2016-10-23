@@ -3,7 +3,8 @@
 	padding-bottom: 12px;
 	padding-left: 12px;
 	font-size: 18px;
-	cursor: pointer;
+	height: 21px;
+	/*cursor: pointer;*/
 }
 
 .tabDecoratorParent {
@@ -11,7 +12,7 @@
 }
 
 .tabDecorator {
-	height: calc(12px + 12px + 18px);
+	height: calc(12px + 12px + 21px);
 	width: 4px;
 	position: absolute;
 	left: -12px;
@@ -26,6 +27,6 @@
 	background-color: #1CBFE2 !important;
 }
 
-.SettingsTab.selected {
+/*.SettingsTab.selected {
 	cursor: default !important;
-}
+}*/
