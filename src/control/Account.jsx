@@ -1,6 +1,6 @@
 class Account {
 	static isLoggedIn() {
-		return true;//todo
+		return false;//todo
 	}
 }
 
