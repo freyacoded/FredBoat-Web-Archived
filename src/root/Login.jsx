@@ -16,6 +16,20 @@ class Login extends Component {
 					<div className="loginPlus">+</div>
 					<img className="discordLogo" src={discordLogo} draggable="false" alt="logo"></img>
 				</div>
+				<div className="loginBody">
+					<div className="loginText">
+						Log in to Discord to manage FredBoat on your server.
+					</div>
+
+					<a className="authButton">
+						Authenticate with Discord
+					</a>
+				</div>
+				<div className="footer">
+					<div className="footerText">
+						FredBoat-Web &#169; Fre_d licensed under the <a href="https://github.com/Frederikam/FredBoat-Web/blob/master/LICENSE">MIT License</a>.
+					</div>
+				</div>
 			</div>
 		);
 	}

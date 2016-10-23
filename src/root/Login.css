@@ -10,9 +10,9 @@
 
 .logoDiv {
 	/*background-color: red;*/
-	height: 50vh;
+	height: 30vh;
 	width: 60vh;
-	margin-top: 15vh;
+	margin-top: 5vh;
 	margin-left: auto;
 	margin-right: auto;
 	vertical-align: baseline;
@@ -45,4 +45,37 @@
 	bottom: 3.5%;
 	user-select: none;
 	cursor: default;
+}
+
+.loginBody {
+	height: calc(65vh - 32px - 64px);
+	background-color: #FFFFFF;
+}
+
+.loginText {
+	padding-top: 48px;
+	font-weight: bold;
+	font-family: lato;
+	font-size: 24px;
+	text-align: center;
+	display: block;
+
+}
+
+.authButton {
+	width: 500px;
+	height: 2em;
+	line-height: 2em;
+	text-align: center;
+	vertical-align: center;
+	margin-top: 32px;
+	background-color: #1CBFE2;
+	color: #FFF;
+	font-weight: bold;
+	font-family: lato;
+	font-size: 24px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 30px;
+	display: block;
 }
