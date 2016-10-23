@@ -12,7 +12,7 @@ class App extends Component {
 						<div className="title">FredBoat</div>
 					</section>
 					<section className="logoSection">
-						<img className="logo" src={logo} style={{display: "none"}}></img>
+						<img className="logo" src={logo} style={{display: "none"}} alt="logo"></img>
 					</section>
 					<section className="page" id="page">
 					</section>

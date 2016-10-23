@@ -1,8 +1,6 @@
-var Account = {
-	foo: "bar",
-	
-	bar: function(){
-		return "baz";
+class Account {
+	static isLoggedIn() {
+		return true;//todo
 	}
 }
 

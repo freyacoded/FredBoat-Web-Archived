@@ -8,12 +8,12 @@ class SettingsTab extends Component {
 	}
 
 	render() {
-		const selected = this.props.index == TabManager.currentTab;
+		const selected = this.props.index === TabManager.currentTab;
 
 		return (
 			<div
 			className={selected ? "SettingsTab selected" : "SettingsTab"}
-			style={selected ? {} : {cursor: "pointer"}}
+			style={selected ? {cursor: "default"} : {cursor: "pointer"}}
 			onClick={this.onClick}>
 				<div className="tabDecoratorParent">
 					<div className="tabDecorator"></div>

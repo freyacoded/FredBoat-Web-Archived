@@ -16,8 +16,6 @@ class TabManager {
 	}
 }
 
-var clazz = TabManager;
-
 TabManager.tabs = ["tab1", "tab2", "tab3", "tab4"];
 TabManager.currentTab = 0;
 

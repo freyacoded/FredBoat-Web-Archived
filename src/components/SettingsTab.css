@@ -4,6 +4,7 @@
 	padding-left: 12px;
 	font-size: 18px;
 	height: 21px;
+	/*user-select: none;*/
 	/*cursor: pointer;*/
 }
 
@@ -26,7 +27,3 @@
 .SettingsTab.selected .tabDecorator {
 	background-color: #1CBFE2 !important;
 }
-
-/*.SettingsTab.selected {
-	cursor: default !important;
-}*/
