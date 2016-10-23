@@ -4,6 +4,10 @@ a, p, div {
 	font-family: Helvetica, Arial;
 }
 
+img {
+	user-select: none;
+}
+
 body {
 	margin: 0;
 	padding: 0;
