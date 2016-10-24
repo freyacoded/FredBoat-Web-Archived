@@ -79,6 +79,7 @@
 	border-radius: 30px;
 	display: block;
 	user-select: none;
+	text-decoration: none;
 	cursor: pointer;
 	transition: 0.5s;
 }
