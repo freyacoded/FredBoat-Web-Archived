@@ -19,6 +19,7 @@ class Login extends Component {
 				<div className="loginBody">
 					<div className="loginText">
 						Log in to Discord to manage FredBoat on your server.
+						<p>(No not really, this site is just a preview.)</p>
 					</div>
 
 					<a className="authButton">
