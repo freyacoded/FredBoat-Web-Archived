@@ -4,7 +4,8 @@ class Account {
 	}
 
 	static isProduction() {
-		return !location.hostname === "localhost" && !location.hostname === "127.0.0.1";
+		// eslint-disable-next-line
+		return !location.hostname == "localhost" && !location.hostname == "127.0.0.1";
 	}
 }
 
