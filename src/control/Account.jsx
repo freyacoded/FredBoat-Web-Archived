@@ -17,7 +17,7 @@ class Account {
 
 	static isProduction() {
 		// eslint-disable-next-line
-		return !location.hostname == "localhost" && !location.hostname == "127.0.0.1";
+		return location.hostname !== "localhost" && location.hostname !== "127.0.0.1";
 	}
 
 	static getUserDataAsync(callback) {
