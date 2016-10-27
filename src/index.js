@@ -9,21 +9,25 @@ import Account from "./control/Account";
 import TabManager from "./control/TabManager";
 import "./index.css";
 
-if(Account.isLoggedIn()){
-	ReactDOM.render(
-		<App />,
-		document.getElementById("appMount")
-	);
+//TODO: Loading screen
 
-	ReactDOM.render(
-		<UserDisplay username="Fre_d 👻#2939" avatarUrl="https://cdn.discordapp.com/avatars/81011298891993088/f59d807bd63741ca24cb2556518aa35a.jpg"/>,
-		document.getElementById("UserDisplay")
-	);
+Account.isLoggedIn(function(isLoggedIn){
+	if(isLoggedIn){
+		ReactDOM.render(
+			<App />,
+			document.getElementById("appMount")
+		);
 
-	TabManager.renderTabs();
-} else {
-	ReactDOM.render(
-		<Login />,
-		document.getElementById("appMount")
-	);
-}
+		ReactDOM.render(
+			<UserDisplay username="Fre_d 👻#2939" avatarUrl="https://cdn.discordapp.com/avatars/81011298891993088/f59d807bd63741ca24cb2556518aa35a.jpg"/>,
+			document.getElementById("UserDisplay")
+		);
+
+		TabManager.renderTabs();
+	} else {
+		ReactDOM.render(
+			<Login />,
+			document.getElementById("appMount")
+		);
+	}
+});

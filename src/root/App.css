@@ -25,15 +25,6 @@
 	display: flex;
 }
 
-.footer {
-	position: absolute;
-	bottom: 0;
-	height: 32px;
-	width: 100%;
-	background-color: #191919;
-	bottom: 0;
-}
-
 .footerText {
 	text-align: center;
 	color: white !important;
