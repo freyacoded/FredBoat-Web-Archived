@@ -1,7 +1,7 @@
 class Account {
 	static getBaseApiUrl() {
 		return this.isProduction()
-		? "http://fbserver.frederikam.com:5998"
+		? "https://fbserver.frederikam.com:5998"
 		: "http://localhost:5998";
 	}
 
