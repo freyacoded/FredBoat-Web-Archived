@@ -6,6 +6,8 @@ class Account {
 	}
 
 	static isLoggedIn(callback) {
+		callback(true);//debug
+		return;
 		this.getUserDataAsync(function(result) {
 			if(result != null){
 				callback(true);

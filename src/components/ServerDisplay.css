@@ -1,0 +1,43 @@
+.serverDisplayContainer {
+	display:flex;
+	justify-content:flex-end;
+	align-items:center;
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 64px;
+}
+
+.serverIcon {
+	border-radius: 50%;
+	height: 42px;
+	background-size: 42px 42px;
+	width: 42px;
+	float: right;
+}
+
+.ServerDisplay {
+	padding-right: 9px;
+	width: 264px;
+}
+
+.serverName {
+	color: white;
+	font-size: 24px;
+	width: 200px;
+	height: 42px;
+	position: absolute;
+	right: 64px;
+	vertical-align: middle;
+	display: flex;
+	align-items: center;
+	cursor: default;
+	user-select: none;
+	float: right;
+	white-space: nowrap;
+
+	/* overflow */
+	white-space: nowrap;
+    overflow: hidden;
+	text-overflow: ellipsis;
+}
