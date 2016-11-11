@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import DiscordGuild from "../control/DiscordGuild"
 import ServerDisplay from "../components/ServerDisplay"
 import ServerList from "../components/ServerList"
 import logo from "../../public/logo.svg";
@@ -12,7 +13,7 @@ class App extends Component {
 					<section className="header">
 						<div id="UserDisplay"></div>
 						<div className="title">FredBoat</div>
-						<ServerDisplay name="Very very very long server name" iconUrl="https://cdn.discordapp.com/avatars/81011298891993088/f59d807bd63741ca24cb2556518aa35a.jpg"/>
+						<ServerDisplay guild={DiscordGuild.placeholder}/>
 					</section>
 					<ServerList/>
 					<section className="logoSection">
