@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import "./ServerDisplay.css";
+import "./css/ServerDisplay.css";
 
 class ServerDisplay extends Component {
 	render() {

@@ -16,7 +16,7 @@ class TabManager {
 	}
 }
 
-TabManager.tabs = ["tab1", "tab2", "tab3", "tab4"];
+TabManager.tabs = ["Server", "#general", "#spam", "#etc"];
 TabManager.currentTab = 0;
 
 export default TabManager;

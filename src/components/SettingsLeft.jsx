@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import SettingsTab from "./SettingsTab.jsx";
-import './SettingsLeft.css';
+import './css/SettingsLeft.css';
 
 class SettingsLeft extends Component {
 	render() {

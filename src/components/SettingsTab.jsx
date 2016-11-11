@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import TabManager from "../control/TabManager";
-import "./SettingsTab.css";
+import "./css/SettingsTab.css";
 
 class SettingsTab extends Component {
 	onClick = () => {

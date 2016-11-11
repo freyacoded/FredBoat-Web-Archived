@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import "./UserDisplay.css";
+import "./css/UserDisplay.css";
 
 class UserDisplay extends Component {
 	render() {
