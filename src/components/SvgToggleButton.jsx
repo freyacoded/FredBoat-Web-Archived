@@ -10,8 +10,8 @@ class SvgToggleButton extends Component {
 	}
 
 	componentDidMount() {
-		
-		Snap.load("svg/" + this.props.type + ".svg", (svg) => {
+		console.log(SvgIconConfig[this.props.type].url)
+		Snap.load(SvgIconConfig[this.props.type].url, (svg) => {
 			var s = Snap("#" + this.props.id);
 			var g = svg.select("g");
 			console.log(g)

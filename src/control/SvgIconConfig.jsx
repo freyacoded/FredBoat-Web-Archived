@@ -1,7 +1,6 @@
 class SvgIconConfig {}
 
-SvgIconConfig = {
-	hamburgerCross : {
+SvgIconConfig.hamburger = {
 		url : 'svg/hamburger.svg',
 		animation : [
 			{ 
@@ -26,7 +25,6 @@ SvgIconConfig = {
 				} 
 			}
 		]
-	}
-};
+	};
 
 export default SvgIconConfig;
