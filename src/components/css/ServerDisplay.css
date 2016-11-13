@@ -1,11 +1,14 @@
 .serverDisplayContainer {
-	display:flex;
-	justify-content:flex-end;
-	align-items:center;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
 	position: absolute;
 	top: 0;
 	right: 0;
 	height: 64px;
+	padding-left: 16px;
+	/*box-shadow: -2px 0 0 rgba(0,0,0,.2), inset 2px 0 0 rgba(0,0,0,.4);*/
+	box-shadow: 0 -1px 16px #000000;
 }
 
 .serverIcon {
@@ -13,27 +16,25 @@
 	height: 42px;
 	background-size: 42px 42px;
 	width: 42px;
-	float: right;
+	float: left;
 }
 
 .ServerDisplay {
 	padding-right: 9px;
-	width: 264px;
+	width: 314px;
 }
 
 .serverName {
 	color: white;
-	font-size: 24px;
-	width: 200px;
+	font-size: 20px;
+	width: 250px;
+	padding-left: 8px;
 	height: 42px;
-	position: absolute;
-	right: 64px;
 	vertical-align: middle;
 	display: flex;
 	align-items: center;
 	cursor: default;
 	user-select: none;
-	float: right;
 	white-space: nowrap;
 
 	/* overflow */
