@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import Snap from "snapsvg-cjs";
 import SvgIconConfig from "../control/SvgIconConfig";
+import "./css/SvgToggleButton.css";
 
 class SvgToggleButton extends Component {
 	onClick = () => {
@@ -18,17 +19,11 @@ class SvgToggleButton extends Component {
 		});
 	}
 
-	render() {
-		var style = {
-			width: this.props.width,
-			height: this.props.height
-		};
-
-		var button = (
+	render() {var button = (
 			<div
 			className={"SvgToggleButton " + this.props.type}
 			onClick={this.onClick}
-			style={style}>
+			>
 				<svg viewBox="0 0 64 64" id={this.props.id} width={this.props.width} height={this.props.height}></svg>
 			</div>
 		);

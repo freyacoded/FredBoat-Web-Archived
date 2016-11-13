@@ -21,7 +21,7 @@
 
 .ServerDisplay {
 	padding-right: 9px;
-	width: 314px;
+	width: calc(250px + 64px + 42px);
 }
 
 .serverName {
@@ -41,4 +41,10 @@
 	white-space: nowrap;
     overflow: hidden;
 	text-overflow: ellipsis;
+}
+
+.hamburger {
+	position: absolute;
+	right: 0px;
+	top: 0px;
 }
