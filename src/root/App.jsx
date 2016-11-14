@@ -19,7 +19,14 @@ class App extends Component {
 					<section className="logoSection">
 						<img className="logo" src={logo} style={{display: "none"}} alt="logo" draggable="false"></img>
 					</section>
-					<section className="page" id="page">
+					<section className="main">
+						<section className="settingsLeftContainer">
+							<div id="settingsLeft"></div>
+						</section>
+						<section className="page" id="page">
+							<input type="checkbox" id="memes"/>
+							<label for="memes">Dank</label>
+						</section>
 					</section>
 				</div>
 				<section className="footer">

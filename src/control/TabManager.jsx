@@ -6,7 +6,7 @@ class TabManager {
 	static renderTabs() {
 		ReactDOM.render(
 			<SettingsLeft tabs={TabManager.tabs} selected={TabManager.currentTab}/>,
-			document.getElementById("page")
+			document.getElementById("settingsLeft")
 		);
 	}
 
