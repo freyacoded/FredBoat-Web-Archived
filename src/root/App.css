@@ -11,14 +11,14 @@ g {
 
 .logoSection {
 	background-color: #1CBFE2;
-	height: 256px;
+	height: 120px;
 }
 
 .logo {
 	margin: auto;
 	display: block;
-	height: 232px;
-	width: 232px;
+	height: 100px;
+	width: 100px;
 	padding-top: 6px;
 	display: block !important;
 }
@@ -26,7 +26,7 @@ g {
 .page {
 	padding-bottom :32px;
 	width: 100%;
-	min-height: calc(100vh - 64px - 32px - 256px);
+	min-height: calc(100vh - 64px - 32px - 120px);
 	display: flex;
 }
 
