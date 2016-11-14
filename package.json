@@ -1,20 +1,21 @@
 {
-	"name": "fredboat-web",
-	"version": "0.1.0",
-	"private": false,
-	"devDependencies": {
-		"react-scripts": "0.6.1"
-	},
-	"dependencies": {
-		"react": "^15.3.2",
-		"react-dom": "^15.3.2",
-		"react-router": "^2.8.1",
-		"snapsvg-cjs": "0.0.4"
-	},
-	"scripts": {
-		"start": "react-scripts start",
-		"build": "react-scripts build",
-		"test": "react-scripts test --env=jsdom",
-		"eject": "react-scripts eject"
-	}
+  "name": "fredboat-web",
+  "version": "0.1.0",
+  "private": false,
+  "devDependencies": {
+    "react-scripts": "0.6.1"
+  },
+  "dependencies": {
+    "rc-checkbox": "^1.4.3",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-router": "^2.8.1",
+    "snapsvg-cjs": "0.0.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
 }
