@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import DiscordGuild from "../control/DiscordGuild"
 import ServerDisplay from "../components/ServerDisplay"
 import ServerList from "../components/ServerList"
+import Checkbox from "rc-checkbox";
 import logo from "../../public/logo.svg";
+import 'rc-checkbox/assets/index.css';
 import "./App.css";
 
 class App extends Component {
@@ -24,7 +26,7 @@ class App extends Component {
 							<div id="settingsLeft"></div>
 						</section>
 						<section className="page" id="page">
-							
+							<Checkbox classnNme="rc-checkbox-x150"/>
 						</section>
 					</section>
 				</div>

@@ -59,3 +59,27 @@ a {
 	background-color: #191919;
 	bottom: 0;
 }
+
+/*
+.rc-checkbox {
+	height: 16px;
+	transform: scale(2, 2);
+	position: relative;
+	top: 6px;
+	left: 8px;
+}
+*/
+
+.rc-checkbox {
+	height: 8px;
+	transform: scale(1.5, 1.5);
+	position: relative;
+	top: -4px;
+	left: 4px;
+	margin:16px;
+}
+
+.rc-checkbox-checked .rc-checkbox-inner {
+	background-color: #1CBFE2;
+	border-color: #1CBFE2;
+}
