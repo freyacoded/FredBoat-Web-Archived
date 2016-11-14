@@ -59,38 +59,3 @@ a {
 	background-color: #191919;
 	bottom: 0;
 }
-
-/* Checkbox */
-input[type=checkbox] {
-	position: absolute;
-	z-index: -1000;
-	left: -1000px;
-	overflow: hidden;
-	clip: rect(0 0 0 0);
-	height: 1px;
-	width: 1px;
-	margin: -1px;
-	padding: 0;
-	border: 0;
-}
-
-input[type=checkbox] + label {
-	font-size: 12px;
-	font-style: normal;
-	padding-left: 23px;
-	height: 18px;
-	display: inline-block;
-	background-repeat: no-repeat;
-	background-position: 0 0;
-	vertical-align: middle;
-	cursor: pointer;
-}
-
-input[type=checkbox]:checked + label {
-	background-position: 0 -18px;
-}
-
-.checkboxLabel {
-	background-image: url(/png/checkbox-bg.png);
-	user-select: none;
-}

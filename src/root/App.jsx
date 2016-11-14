@@ -24,8 +24,7 @@ class App extends Component {
 							<div id="settingsLeft"></div>
 						</section>
 						<section className="page" id="page">
-							<input type="checkbox" id="memes"/>
-							<label className="checkboxLabel" htmlFor="memes">Dank</label>
+							
 						</section>
 					</section>
 				</div>
