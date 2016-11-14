@@ -25,7 +25,7 @@ class App extends Component {
 						</section>
 						<section className="page" id="page">
 							<input type="checkbox" id="memes"/>
-							<label for="memes">Dank</label>
+							<label className="checkboxLabel" htmlFor="memes">Dank</label>
 						</section>
 					</section>
 				</div>
