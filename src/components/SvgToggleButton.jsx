@@ -4,26 +4,48 @@ import Snap from "snapsvg-cjs";
 import SvgIconConfig from "../control/SvgIconConfig";
 import "./css/SvgToggleButton.css";
 
-const duration = 500;//ms
+const duration = 300;//ms
 
 var animate = function(s, config, reverse) {
-	const direction = reverse ? "to" : "from";
+	const direction = reverse ? "from" : "to";
 
 	for(let i in config.animation){
 		const part = config.animation[i];
 		const el = s.select("g").select(part.el);
-		el.animate(part.animProperties[direction], duration);
+		const props = part.animProperties[direction];
+
+		
+
+		if (props.before){
+			el.attr(JSON.parse(props.before));
+		}
+
+		el.animate(JSON.parse(props.val), duration);
 	}
 }
 
 class SvgToggleButton extends Component {
+
+	constructor(props) {
+		super(props);
+		this.state = {
+			toggle: props.defaultValue
+		};
+	}
+
 	onClick = () => {
+
+		this.state.toggle = (this.state.toggle === false);
+
 		animate(
 			Snap("#" + this.props.id),
 			SvgIconConfig[this.props.type],
-			false
+			this.state.toggle
 			);
-		this.props.onClick(this);
+
+		if(this.props.onClick){
+			this.props.onClick(this);
+		}
 	}
 
 	componentDidMount() {
