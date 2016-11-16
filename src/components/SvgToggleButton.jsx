@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
 import Snap from "snapsvg-cjs";
 import SvgIconConfig from "../control/SvgIconConfig";
 import "./css/SvgToggleButton.css";
@@ -13,8 +12,6 @@ var animate = function(s, config, reverse) {
 		const part = config.animation[i];
 		const el = s.select("g").select(part.el);
 		const props = part.animProperties[direction];
-
-		
 
 		if (props.before){
 			el.attr(JSON.parse(props.before));
@@ -35,7 +32,9 @@ class SvgToggleButton extends Component {
 
 	onClick = () => {
 
-		this.state.toggle = (this.state.toggle === false);
+		var state = this.state;
+		state.toggle = this.state.toggle === false;
+		this.setState(state);
 
 		animate(
 			Snap("#" + this.props.id),
