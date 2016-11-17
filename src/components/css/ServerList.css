@@ -9,6 +9,6 @@
 	transition: right 0.5s;
 }
 
-.ServerList.active {
+.ServerList.open {
 	right: 0px;
 }

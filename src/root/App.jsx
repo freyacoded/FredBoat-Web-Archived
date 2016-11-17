@@ -8,6 +8,7 @@ import 'rc-checkbox/assets/index.css';
 import "./App.css";
 
 class App extends Component {
+
 	render() {
 		return (
 			<div>
@@ -17,7 +18,9 @@ class App extends Component {
 						<div className="title">FredBoat</div>
 						<ServerDisplay guild={DiscordGuild.placeholder}/>
 					</section>
-					<ServerList/>
+					<div id="serverListContainer">
+						<ServerList isOpen={false}/>
+					</div>
 					<section className="logoSection">
 						<img className="logo" src={logo} style={{display: "none"}} alt="logo" draggable="false"></img>
 					</section>
@@ -26,7 +29,7 @@ class App extends Component {
 							<div id="settingsLeft"></div>
 						</section>
 						<section className="page" id="page">
-							<Checkbox classnNme="rc-checkbox-x150"/>
+							<Checkbox classnName="rc-checkbox-x150"/>
 						</section>
 					</section>
 				</div>
