@@ -14,7 +14,7 @@ Account.isLoggedIn(function(isLoggedIn){
 	if(isLoggedIn){
 		ReactDOM.render(
 			<Router history={browserHistory}>
-				<Route path="/" component={App}/>
+				<Route path="/*" component={App}/>
 			</Router>,
 			document.getElementById("appMount")
 		);
