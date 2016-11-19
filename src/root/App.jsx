@@ -9,12 +9,19 @@ import "./App.css";
 
 class App extends Component {
 
+	componentDidMount() {
+		TabManager.renderTabs();
+	}
+
 	render() {
+		
 		return (
 			<div>
 				<div className="wrapper">
 					<section className="header">
-						<div id="UserDisplay"></div>
+						<div id="UserDisplay">
+							<UserDisplay username="Fre_d 👻#2939" avatarUrl="https://cdn.discordapp.com/avatars/81011298891993088/f59d807bd63741ca24cb2556518aa35a.jpg"/>
+						</div>
 						<div className="title">FredBoat</div>
 						<ServerDisplay guild={DiscordGuild.placeholder}/>
 					</section>

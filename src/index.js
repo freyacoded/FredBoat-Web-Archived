@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { Router, Route, hashHistory } from "react-router";
 
 import App from "./root/App";
 import Login from "./root/Login";
@@ -17,13 +18,6 @@ Account.isLoggedIn(function(isLoggedIn){
 			<App />,
 			document.getElementById("appMount")
 		);
-
-		ReactDOM.render(
-			<UserDisplay username="Fre_d 👻#2939" avatarUrl="https://cdn.discordapp.com/avatars/81011298891993088/f59d807bd63741ca24cb2556518aa35a.jpg"/>,
-			document.getElementById("UserDisplay")
-		);
-
-		TabManager.renderTabs();
 	} else {
 		ReactDOM.render(
 			<Login />,
