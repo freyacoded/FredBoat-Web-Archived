@@ -2,8 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Router, Route, browserHistory } from "react-router";
 
-import App from "./root/App";
-import Login from "./root/Login";
+import App from "./module/App";
+import ServerSelect from "./module/ServerSelect";
+import Login from "./module/Login";
 
 import Account from "./control/Account";
 import "./index.css";
@@ -14,7 +15,8 @@ Account.isLoggedIn(function(isLoggedIn){
 	if(isLoggedIn){
 		ReactDOM.render(
 			<Router history={browserHistory}>
-				<Route path="/*" component={App}/>
+				<Route path="/*" component={ServerSelect}/>
+				<Route path="/manage/:serverid" component={App}/>
 			</Router>,
 			document.getElementById("appMount")
 		);
