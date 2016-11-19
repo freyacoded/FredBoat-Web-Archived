@@ -4,10 +4,8 @@ import { Router, Route, hashHistory } from "react-router";
 
 import App from "./root/App";
 import Login from "./root/Login";
-import UserDisplay from "./components/UserDisplay";
 
 import Account from "./control/Account";
-import TabManager from "./control/TabManager";
 import "./index.css";
 
 //TODO: Loading screen
