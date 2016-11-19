@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import DiscordGuild from "../control/DiscordGuild";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import Checkbox from "rc-checkbox";
 import TabManager from "../control/TabManager";
 import 'rc-checkbox/assets/index.css';
@@ -26,11 +27,7 @@ class App extends Component {
 						</section>
 					</section>
 				</div>
-				<section className="footer">
-					<div className="footerText">
-						FredBoat-Web &#169; Fre_d licensed under the <a href="https://github.com/Frederikam/FredBoat-Web/blob/master/LICENSE">MIT License</a>.
-					</div>
-				</section>
+				<Footer/>
 			</div>
 		);
 	}
