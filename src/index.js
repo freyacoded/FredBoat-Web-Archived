@@ -13,7 +13,9 @@ import "./index.css";
 Account.isLoggedIn(function(isLoggedIn){
 	if(isLoggedIn){
 		ReactDOM.render(
-			<App />,
+			<Router history={hashHistory}>
+				<Route path="/" component={App}/>
+			</Router>,
 			document.getElementById("appMount")
 		);
 	} else {
