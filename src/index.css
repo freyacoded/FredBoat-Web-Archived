@@ -83,3 +83,11 @@ a {
 	background-color: #1CBFE2;
 	border-color: #1CBFE2;
 }
+
+.serverIcon {
+	border-radius: 50%;
+	height: 42px;
+	background-size: 42px 42px;
+	width: 42px;
+	float: left;
+}

@@ -11,14 +11,6 @@
 	/*box-shadow: 0 -1px 16px #000000;*/
 }
 
-.serverIcon {
-	border-radius: 50%;
-	height: 42px;
-	background-size: 42px 42px;
-	width: 42px;
-	float: left;
-}
-
 .ServerDisplay {
 	padding-right: 9px;
 	width: calc(250px + 64px + 42px);
