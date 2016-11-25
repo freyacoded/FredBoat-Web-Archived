@@ -26,7 +26,12 @@
 	text-align: center;
 	color: white;
 	float: right;
-	margin-top: calc(150px - 78px)
+	margin-top: calc(150px - 78px);
+	transition: 0.5s;
+}
+
+.GuildFlexItem > a:hover {
+	background-color: #19abcc;
 }
 
 a  {
