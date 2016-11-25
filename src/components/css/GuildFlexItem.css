@@ -17,7 +17,7 @@
 	font-size: 20px;
 }
 
-.manageLink {
+.GuildFlexItem > a {
 	background-color: #1CBFE2;
 	width: 5em;
 	font-size: 20px;
@@ -29,6 +29,6 @@
 	margin-top: calc(150px - 78px)
 }
 
-.manageLink > a {
+a  {
 	text-decoration: none;
 }

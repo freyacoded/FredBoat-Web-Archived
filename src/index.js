@@ -18,8 +18,6 @@ Account.isLoggedIn(function(isLoggedIn){
 				<Route path="/manage/:serverid" component={App}/>
 				<Route path="/login" component={Login}/>
 				<Route path="/*" component={ServerSelect}/>
-				
-
 			</Router>,
 			document.getElementById("appMount")
 		);

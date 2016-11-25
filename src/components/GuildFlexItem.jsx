@@ -22,10 +22,10 @@ class GuildFlexItem extends Component {
 					<div className="flexboxLabel"></div>
 					<div className="flexboxData"></div>
 				</div>
-
-				<div className="manageLink">
-					<Link to={"/manage/" + this.props.guild.name}>MANAGE</Link>
-				</div>
+				<Link to={"/manage/" + this.props.guild.id}>
+					<div className="manageLink">MANAGE</div>
+				</Link>
+				
 			</div>
 		);
 	}
