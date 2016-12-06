@@ -22,7 +22,7 @@ class Header extends Component {
 					<ServerList isOpen={false}/>
 				</div>
 				<section className="logoSection">
-					<img className="logo" src={logo} style={{display: "none"}} alt="logo" draggable="false"></img>
+					<img className="logo" src={logo} style={{display: "none"}} alt="logo" draggable="false"/>
 				</section>
 			</div>
 			);
