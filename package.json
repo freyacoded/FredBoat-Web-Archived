@@ -2,9 +2,15 @@
   "name": "fredboat-web",
   "version": "0.1.0",
   "private": false,
+  "description": "Bot dashboard for FredBoat",
+  "license": "MIT",
+  "author": "Frederik Mikkelsen",
+  "repository": "",
+
   "devDependencies": {
-    "react-scripts": "0.6.1"
+    "grunt":"1.0.0"
   },
+
   "dependencies": {
     "rc-checkbox": "^1.4.3",
     "react": "^15.3.2",
@@ -12,10 +18,14 @@
     "react-router": "^2.8.1",
     "snapsvg-cjs": "0.0.4"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+
+  "babel": {
+    "presets": [
+      "react-app"
+    ]
+  },
+
+  "eslintConfig": {
+    "extends": "react-app"
   }
 }
