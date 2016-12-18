@@ -5,12 +5,19 @@
   "description": "Bot dashboard for FredBoat",
   "license": "MIT",
   "author": "Frederik Mikkelsen",
-  "repository": "",
-
+  "repository": "https://github.com/Frederikam/FredBoat-Web",
   "devDependencies": {
-    "grunt":"1.0.0"
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-preset-react-app": "^2.0.1",
+    "grunt": "1.0.0",
+    "grunt-babel": "^6.0.0",
+    "grunt-env": "^0.4.4",
+    "grunt-webpack": "^1.0.18",
+    "jsx-loader": "^0.13.2",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
   },
-
   "dependencies": {
     "rc-checkbox": "^1.4.3",
     "react": "^15.3.2",
@@ -18,13 +25,6 @@
     "react-router": "^2.8.1",
     "snapsvg-cjs": "0.0.4"
   },
-
-  "babel": {
-    "presets": [
-      "react-app"
-    ]
-  },
-
   "eslintConfig": {
     "extends": "react-app"
   }
