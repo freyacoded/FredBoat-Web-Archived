@@ -1,0 +1,7 @@
+{
+  "presets": ["react", "es2016"],
+  "plugins": ["transform-react-jsx"],
+  "ignore": [
+    "node_modules"
+  ]
+}
