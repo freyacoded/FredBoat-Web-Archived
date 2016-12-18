@@ -37,6 +37,9 @@
     "react-redux": "^4.1.2",
     "redux": "^3.1.5",
     "ts-loader": "^0.8.1",
-    "typescript": "^1.7.5"
+    "typescript": "^1.7.5",
+    "snapsvg-cjs": "0.0.4",
+    "rc-checkbox": "^1.4.3",
+    "react": "^15.3.2"
   }
 }
