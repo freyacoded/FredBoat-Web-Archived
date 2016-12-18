@@ -1,42 +1,30 @@
-/// <reference path="../typings/tsd.d.ts" />
+import React from "react";
+import ReactDOM from "react-dom";
+import { Router, Route, browserHistory } from "react-router";
 
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
-import { Store, createStore } from 'redux';
-import { Provider } from 'react-redux';
+import App from "./module/App";
+import ServerSelect from "./module/ServerSelect";
+import Login from "./module/Login";
 
-import { App } from './components/app';
-import { counterApp } from './reducers';
+import Account from "./control/Account";
+import "./index.css";
 
-declare const require: (name: String) => any;
+//TODO: Loading screen
 
-interface IHotModule {
-  hot?: { accept: (path: string, callback: () => void) => void };
-};
-
-declare const module: IHotModule;
-
-function configureStore(): Store {
-  const store: Store = createStore(counterApp);
-
-  if (module.hot) {
-    module.hot.accept('./reducers', () => {
-      const nextRootReducer: any = require('./reducers').counterApp;
-      store.replaceReducer(nextRootReducer);
-    });
-  }
-
-  return store;
-}
-
-const store: Store = configureStore();
-
-class Main extends React.Component<{}, {}> {
-  public render(): React.ReactElement<Provider> {
-    return (<Provider store={store}>
-      <App />
-    </Provider>);
-  }
-}
-
-ReactDOM.render(<Main />, document.getElementById('app'));
+Account.isLoggedIn(function(isLoggedIn){
+	if(isLoggedIn){
+		ReactDOM.render(
+			<Router history={browserHistory}>
+				<Route path="/manage/:serverid" component={App}/>
+				<Route path="/login" component={Login}/>
+				<Route path="/*" component={ServerSelect}/>
+			</Router>,
+			document.getElementById("appMount")
+		);
+	} else {
+		ReactDOM.render(
+			<Login />,
+			document.getElementById("appMount")
+		);
+	}
+});
