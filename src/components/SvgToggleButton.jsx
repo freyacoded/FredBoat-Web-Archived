@@ -30,7 +30,7 @@ class SvgToggleButton extends Component {
 		};
 	}
 
-	onClick = () => {
+	onClick() {
 
 		var state = this.state;
 		state.toggle = this.state.toggle === false;

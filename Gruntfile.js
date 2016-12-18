@@ -6,12 +6,17 @@ module.exports = function(grunt) {
     grunt.initConfig({
         babel: {
             options: {
-                sourceMap: true
+                plugins: ['transform-react-jsx'],
+                presets: ['es2016', 'react']
             },
-            dist: {
-                files: {
-                    "dist/index.jsx": "src/index.jsx"
-                }
+            jsx: {
+                files: [{
+                    expand: true,
+                    cwd: 'src/',
+                    src: ['**/*.jsx'],
+                    dest: 'dist/',
+                    ext: '.js'
+                }]
             }
         },
         env: {

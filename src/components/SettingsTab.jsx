@@ -3,7 +3,7 @@ import TabManager from "../control/TabManager";
 import "./css/SettingsTab.css";
 
 class SettingsTab extends Component {
-	onClick = () => {
+	onClick() {
 		TabManager.setCurrentTab(this.props.index);
 	}
 
