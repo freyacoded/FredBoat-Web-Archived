@@ -1,9 +1,11 @@
 module.exports = {
     // webpack options
-    entry: "./src/index.jsx",
+    entry: {
+        "bundle.js": "./src/script/index.jsx"
+    },
     output: {
         path: "asserts/",
-        filename: "[hash].js",
+        filename: "[name]",
     },
 
     stats: {
@@ -42,10 +44,33 @@ module.exports = {
     // Use this in combination with the inline option
 
     module: {
-        loaders: [{
-            test: /\.jsx$/,
-            exclude: /node_modules/,
-            loader: 'babel-loader'
-        }]
+        loaders: [
+            {
+                test: /\.jsx$/,
+                exclude: /node_modules/,
+                loader: 'babel-loader'
+            },
+            {
+                test: /\.css$/,
+                loader: "style-loader!css"
+            },
+            {
+                test: /\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2)(\?.*)?$/,
+                loader: 'file',
+                query: {
+                    name: 'static/media/[name].[hash:8].[ext]'
+                }
+            },
+            // "url" loader works just like "file" loader but it also embeds
+            // assets smaller than specified size as data URLs to avoid requests.
+            {
+                test: /\.(mp4|webm|wav|mp3|m4a|aac|oga)(\?.*)?$/,
+                loader: 'url',
+                query: {
+                    limit: 10000,
+                    name: 'static/media/[name].[hash:8].[ext]'
+                }
+            }
+        ]
     }
 };
