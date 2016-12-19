@@ -3,6 +3,8 @@ var webpack = require('webpack');
 
 var APP_DIR = path.join(__dirname, '..', 'app');
 
+process.env.NODE_ENV = "production";
+
 module.exports = {
   devtool: 'source-map',
   entry: './app/index.tsx',
@@ -31,11 +33,6 @@ module.exports = {
   },
   plugins: [
     new webpack.optimize.OccurrenceOrderPlugin(),
-    new webpack.DefinePlugin({
-      'process.env': {
-        'NODE_ENV': JSON.stringify('production')
-      }
-    }),
     new webpack.optimize.UglifyJsPlugin({
       compressor: {
         warnings: false

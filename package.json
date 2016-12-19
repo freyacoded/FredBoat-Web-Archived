@@ -7,7 +7,7 @@
   "author": "Frederik Mikkelsen",
   "repository": "https://github.com/Frederikam/FredBoat-Web",
   "scripts": {
-    "build:webpack": "NODE_ENV=production webpack --config config/webpack.prod.js",
+    "build:webpack": "webpack --config config/webpack.prod.js",
     "build": "npm run clean && npm run build:webpack",
     "clean": "rimraf build",
     "start": "node dev_server.js",
