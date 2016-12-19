@@ -14,10 +14,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "babel-cli": "^6.18.0",
     "babel-core": "^6.4.5",
     "babel-loader": "^6.2.1",
     "babel-plugin-react-transform": "^2.0.0",
-    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-es2016": "^6.16.0",
     "babel-preset-react": "^6.3.13",
     "babel-preset-stage-0": "^6.3.13",
     "css-loader": "^0.26.1",
@@ -26,6 +27,7 @@
     "react-transform-hmr": "^1.0.2",
     "redbox-react": "^1.2.2",
     "rimraf": "^2.5.2",
+    "style-loader": "^0.13.1",
     "tslint": "^3.3.0",
     "tslint-loader": "^2.1.0",
     "webpack": "^1.12.15",
@@ -33,13 +35,13 @@
     "webpack-hot-middleware": "^2.6.4"
   },
   "dependencies": {
-    "react-dom": "^0.14.7",
+    "rc-checkbox": "^1.4.3",
+    "react": "^15.3.2",
+    "react-dom": "^15.4.1",
     "react-redux": "^4.1.2",
     "redux": "^3.1.5",
-    "ts-loader": "^0.8.1",
-    "typescript": "^1.7.5",
     "snapsvg-cjs": "0.0.4",
-    "rc-checkbox": "^1.4.3",
-    "react": "^15.3.2"
+    "ts-loader": "^0.8.1",
+    "typescript": "^1.7.5"
   }
 }
