@@ -8,16 +8,21 @@ module.exports = {
   devtool: 'eval',
   entry: ['webpack-hot-middleware/client', './app/index.tsx'],
   module: {
-    preLoaders: [{
-      test: /\.tsx?$/,
-      loader: 'tslint',
-      include: APP_DIR
-    }],
-    loaders: [{
-      test: /\.tsx?$/,
-      loaders: ['babel', 'ts'],
-      include: APP_DIR
-    }]
+      preLoaders: [{
+          test: /\.tsx?$/,
+          loader: 'tslint',
+          include: APP_DIR
+      }],
+      loaders: [{
+          test: /\.tsx?$/,
+          loaders: ['babel', 'ts'],
+          include: APP_DIR
+          },
+          {
+              test: /\.css$/,
+              loader: "style-loader!css-loader"
+          }
+      ]
   },
   output: {
     filename: 'app.js',

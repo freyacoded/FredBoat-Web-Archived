@@ -1,30 +1,21 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { Router, Route, browserHistory } from "react-router";
-
-import App from "./module/App";
-import ServerSelect from "./module/ServerSelect";
-import Login from "./module/Login";
-
-import Account from "./control/Account";
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
 import "./index.css";
+import ReactElement = __React.ReactElement;
 
-//TODO: Loading screen
+class App extends React.Component<{}, {}> {
+    public render(): any {
+        return (
+            <p>
+                Test
+            </p>
+        );
+    }
+}
 
-Account.isLoggedIn(function(isLoggedIn){
-	if(isLoggedIn){
-		ReactDOM.render(
-			<Router history={browserHistory}>
-				<Route path="/manage/:serverid" component={App}/>
-				<Route path="/login" component={Login}/>
-				<Route path="/*" component={ServerSelect}/>
-			</Router>,
-			document.getElementById("appMount")
-		);
-	} else {
-		ReactDOM.render(
-			<Login />,
-			document.getElementById("appMount")
-		);
-	}
-});
+console.log(document.getElementById("appMount"));
+
+ReactDOM.render(
+    <App/>,
+    document.getElementById("appMount")
+);
