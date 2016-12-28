@@ -6,7 +6,9 @@ class Account {
     }
 
     static isLoggedIn(callback) {
-
+        if(localStorage.bearer == null || localStorage.refresh == null || localStorage.bearer == "" || localStorage.refresh == "") {
+            callback(false);//Missing credentials
+        }
 
         this.getUserDataAsync(function(result) {
             if(result != null){
@@ -23,14 +25,18 @@ class Account {
     }
 
     static getUserDataAsync(callback) {
+        if(localStorage.bearer == null || localStorage.refresh == null || localStorage.bearer == "" || localStorage.refresh == "") {
+            callback(null);//Missing credentials
+        }
+
         if(Account.userData != null){
             callback(Account.userData);
             return;
         }
 
         var request = new XMLHttpRequest();
-        request.open("GET", "https://discordapp.com/users/@me" , true);
-        request.setRequestHeader("Authorization", "Bearer " + localStorage.token);
+        request.open("GET", "https://discordapp.com/api/users/@me" , true);
+        request.setRequestHeader("Authorization", "Bearer " + localStorage.bearer);
 
         request.onload = function() {
             if (this.status >= 200 && this.status < 400) {

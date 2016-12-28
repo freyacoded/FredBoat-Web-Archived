@@ -9,6 +9,7 @@
     "rc-checkbox": "^1.4.3",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
+    "react-loading": "0.0.9",
     "react-router": "^2.8.1",
     "snapsvg-cjs": "0.0.4"
   },

@@ -20,11 +20,16 @@ g {
     height: 100px;
     width: 100px;
     padding-top: 6px;
+    /*noinspection CssOverwrittenProperties*/
     display: block !important;
 }
 
-.main {
+.main-flex {
     display: flex;
+    position: relative;
+}
+
+.main {
     position: relative;
 }
 

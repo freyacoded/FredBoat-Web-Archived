@@ -6,7 +6,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import GuildFlexItem from "../components/GuildFlexItem";
 
-import "./ServerSelect.css";
+import "./css/ServerSelect.css";
 
 class ServerSelect extends Component {
     render() {

@@ -5,21 +5,21 @@ import "./css/SvgToggleButton.css";
 
 const duration = 300;//ms
 
-var animate = function(s, config, reverse) {
+const animate = function (s, config, reverse) {
     const direction = reverse ? "from" : "to";
 
-    for(let i in config.animation){
+    for (let i in config.animation) {
         const part = config.animation[i];
         const el = s.select("g").select(part.el);
         const props = part.animProperties[direction];
 
-        if (props.before){
+        if (props.before) {
             el.attr(JSON.parse(props.before));
         }
 
         el.animate(JSON.parse(props.val), duration);
     }
-}
+};
 
 class SvgToggleButton extends Component {
 
@@ -32,7 +32,7 @@ class SvgToggleButton extends Component {
 
     onClick = () => {
 
-        var state = this.state;
+        const state = this.state;
         state.toggle = this.state.toggle === false;
         this.setState(state);
 
@@ -49,22 +49,21 @@ class SvgToggleButton extends Component {
 
     componentDidMount() {
         Snap.load(SvgIconConfig[this.props.type].url, (svg) => {
-            var s = Snap("#" + this.props.id);
-            var g = svg.select("g");
+            const s = Snap("#" + this.props.id);
+            const g = svg.select("g");
             s.append(g);
         });
     }
 
-    render() {var button = (
+    render() {
+        return (
             <div
-            className={"SvgToggleButton " + this.props.type}
-            onClick={this.onClick}
+                className={"SvgToggleButton " + this.props.type}
+                onClick={this.onClick}
             >
-                <svg viewBox="0 0 64 64" id={this.props.id} width={this.props.width} height={this.props.height}></svg>
+                <svg viewBox="0 0 64 64" id={this.props.id} width={this.props.width} height={this.props.height}/>
             </div>
         );
-
-        return button;
     }
 }
 

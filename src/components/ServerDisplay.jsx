@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-import ReactDOM from "react-dom";
-import SvgToggleButton from "./SvgToggleButton";
 import ServerList from "./ServerList";
-import SvgIconConfig from "../control/SvgIconConfig";
 import "./css/ServerDisplay.css";
 
 class ServerDisplay extends Component {
@@ -12,7 +9,7 @@ class ServerDisplay extends Component {
     }
 
     render() {
-        var style = {}
+        const style = {};
         style["backgroundImage"] = "url(" + this.props.guild.icon + ")";
         return (
             <div className="serverDisplayContainer">

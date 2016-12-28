@@ -1,0 +1,10 @@
+.callback-loading > div {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15vh;
+}
+
+.callback-text {
+    text-align: center;
+    font-size: 32px;
+}

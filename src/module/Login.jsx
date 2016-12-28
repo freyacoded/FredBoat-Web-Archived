@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Account from "../control/Account";
 import logo from "../../public/logo.svg";
 import discordLogo from "../../public/discord.svg";
-import "./Login.css";
+import "./css/Login.css";
 
 class Login extends Component {
     render() {
@@ -13,9 +13,9 @@ class Login extends Component {
                     <div className="title">FredBoat</div>
                 </section>
                 <div className="logoDiv">
-                    <img className="fbLogo" src={logo} draggable="false" alt="logo"></img>
+                    <img className="fbLogo" src={logo} draggable="false" alt="logo"/>
                     <div className="loginPlus">+</div>
-                    <img className="discordLogo" src={discordLogo} draggable="false" alt="logo"></img>
+                    <img className="discordLogo" src={discordLogo} draggable="false" alt="logo"/>
                 </div>
                 <div className="loginBody">
                     <div className="loginText">
