@@ -1,93 +1,93 @@
 @import url('https://fonts.googleapis.com/css?family=Fugaz+One|Lato');
 
 a, p, div {
-	font-family: Helvetica, Arial;
+    font-family: Helvetica, Arial;
 }
 
 img {
-	user-select: none;
+    user-select: none;
 }
 
 html, #appMount { height: 100vh; }
 body { min-height: 100%; position: relative; }
 
 body {
-	margin: 0;
-	padding: 0;
-	/*height: 100%;*/
-	width: 100vw;
-	overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    /*height: 100%;*/
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 p {
-	margin: 0;
-	padding: 10px;
+    margin: 0;
+    padding: 10px;
 }
 
 a {
-	color: inherit;
+    color: inherit;
 }
 
 .header {
-	height: 64px;
-	width: 100%;
-	background-color: #2C2C2C;
+    height: 64px;
+    width: 100%;
+    background-color: #2C2C2C;
 }
 
 .title {
-	margin-left: auto;
-	margin-right: auto;
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 32px;
-	font-size: 32px;
-	font-family:'Fugaz One';
-	text-align: center;
-	color: white;
-	padding-top: 6px;
-	user-select: none;
-	cursor: default;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 32px;
+    font-size: 32px;
+    font-family:'Fugaz One';
+    text-align: center;
+    color: white;
+    padding-top: 6px;
+    user-select: none;
+    cursor: default;
 }
 
 .footer {
-	position: absolute;
-	bottom: 0;
-	height: 32px;
-	width: 100%;
-	background-color: #191919;
-	bottom: 0;
+    position: absolute;
+    bottom: 0;
+    height: 32px;
+    width: 100%;
+    background-color: #191919;
+    bottom: 0;
 }
 
 /*
 .rc-checkbox {
-	height: 16px;
-	transform: scale(2, 2);
-	position: relative;
-	top: 6px;
-	left: 8px;
+    height: 16px;
+    transform: scale(2, 2);
+    position: relative;
+    top: 6px;
+    left: 8px;
 }
 */
 
 .rc-checkbox {
-	height: 8px;
-	transform: scale(1.5, 1.5);
-	position: relative;
-	top: -4px;
-	left: 4px;
-	margin:16px;
+    height: 8px;
+    transform: scale(1.5, 1.5);
+    position: relative;
+    top: -4px;
+    left: 4px;
+    margin:16px;
 }
 
 .rc-checkbox-checked .rc-checkbox-inner {
-	background-color: #1CBFE2;
-	border-color: #1CBFE2;
+    background-color: #1CBFE2;
+    border-color: #1CBFE2;
 }
 
 .serverIcon {
-	border-radius: 50%;
-	height: 42px;
-	background-size: 42px 42px;
-	width: 42px;
-	float: left;
+    border-radius: 50%;
+    height: 42px;
+    background-size: 42px 42px;
+    width: 42px;
+    float: left;
 }

@@ -9,22 +9,22 @@ import GuildFlexItem from "../components/GuildFlexItem";
 import "./ServerSelect.css";
 
 class ServerSelect extends Component {
-	render() {
-		return (
-			<div>
-				<Header/>
-				<div className="guildFlexbox">
-					<GuildFlexItem guild={DiscordGuild.placeholder}/>
-					<GuildFlexItem guild={DiscordGuild.placeholder}/>
-					<GuildFlexItem guild={DiscordGuild.placeholder}/>
-					<GuildFlexItem guild={DiscordGuild.placeholder}/>
-					<GuildFlexItem guild={DiscordGuild.placeholder}/>
-					<GuildFlexItem guild={DiscordGuild.placeholder}/>
-				</div>
-				<Footer/>
-			</div>
-		);
-	}
+    render() {
+        return (
+            <div>
+                <Header/>
+                <div className="guildFlexbox">
+                    <GuildFlexItem guild={DiscordGuild.placeholder}/>
+                    <GuildFlexItem guild={DiscordGuild.placeholder}/>
+                    <GuildFlexItem guild={DiscordGuild.placeholder}/>
+                    <GuildFlexItem guild={DiscordGuild.placeholder}/>
+                    <GuildFlexItem guild={DiscordGuild.placeholder}/>
+                    <GuildFlexItem guild={DiscordGuild.placeholder}/>
+                </div>
+                <Footer/>
+            </div>
+        );
+    }
 }
 
 export default ServerSelect;

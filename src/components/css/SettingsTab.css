@@ -1,35 +1,35 @@
 .SettingsTab {
-	padding-top: 12px;
-	padding-bottom: 12px;
-	padding-left: 12px;
-	font-size: 18px;
-	height: 21px;
-	user-select: none;
-	font-family: Lato;
-	font-weight: 400;
-	color: #7e838c;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    font-size: 18px;
+    height: 21px;
+    user-select: none;
+    font-family: Lato;
+    font-weight: 400;
+    color: #7e838c;
 }
 
 .SettingsTab:hover, .SettingsTab.selected {
-	color: #FFF;
+    color: #FFF;
 }
 
 .tabDecoratorParent {
-	position: relative;
+    position: relative;
 }
 
 .tabDecorator {
-	height: calc(12px + 12px + 21px);
-	width: 4px;
-	position: absolute;
-	left: -12px;
-	top: -12px;
+    height: calc(12px + 12px + 21px);
+    width: 4px;
+    position: absolute;
+    left: -12px;
+    top: -12px;
 }
 
 .SettingsTab:hover .tabDecorator {
-	background-color: #25788C;
+    background-color: #25788C;
 }
 
 .SettingsTab.selected .tabDecorator {
-	background-color: #1CBFE2 !important;
+    background-color: #1CBFE2 !important;
 }

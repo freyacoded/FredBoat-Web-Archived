@@ -1,10 +1,10 @@
 class DiscordGuild {
 
-	constructor(obj) {
-		this.id = obj.id;
-		this.name = obj.name;
-		this.icon = "https://cdn.discordapp.com/icons/" + obj.id + "/" + obj.icon + ".jpg";
-	}
+    constructor(obj) {
+        this.id = obj.id;
+        this.name = obj.name;
+        this.icon = "https://cdn.discordapp.com/icons/" + obj.id + "/" + obj.icon + ".jpg";
+    }
 
 }
 
