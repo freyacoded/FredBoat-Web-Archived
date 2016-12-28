@@ -27,7 +27,6 @@
     align-items: center;
     cursor: default;
     user-select: none;
-    white-space: nowrap;
 
     /* overflow */
     white-space: nowrap;
@@ -37,6 +36,6 @@
 
 .hamburger {
     position: absolute;
-    right: 0px;
-    top: 0px;
+    right: 0;
+    top: 0;
 }

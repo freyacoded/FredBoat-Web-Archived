@@ -12,10 +12,10 @@ class Callback extends Component {
                 <div className="wrapper">
                     <Header/>
                     <section className="main">
-                        <div className="callback-loading">
+                        <div id="callback-loading">
                             <Loading type="spin" color='#1CBFE2' />
                         </div>
-                        <p className="callback-text">
+                        <p id="callback-text">
                             Authenticating with Discord...
                         </p>
                     </section>

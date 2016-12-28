@@ -6,7 +6,7 @@ class Account {
     }
 
     static isLoggedIn(callback) {
-        if(localStorage.bearer == null || localStorage.refresh == null || localStorage.bearer == "" || localStorage.refresh == "") {
+        if(localStorage.bearer == null || localStorage.refresh == null || localStorage.bearer === "" || localStorage.refresh === "") {
             callback(false);//Missing credentials
         }
 
@@ -25,7 +25,7 @@ class Account {
     }
 
     static getUserDataAsync(callback) {
-        if(localStorage.bearer == null || localStorage.refresh == null || localStorage.bearer == "" || localStorage.refresh == "") {
+        if(localStorage.bearer == null || localStorage.refresh == null || localStorage.bearer === "" || localStorage.refresh === "") {
             callback(null);//Missing credentials
         }
 
