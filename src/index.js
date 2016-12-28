@@ -28,6 +28,7 @@ Account.isLoggedIn(function(isLoggedIn){
                 <Callback />,
                 document.getElementById("appMount")
             );
+            Callback.handleCallback();
         } else {
             ReactDOM.render(
                 <Login />,
