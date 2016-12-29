@@ -1,2 +1,2 @@
-/api/*  https://fbapi.frederikam.com/:splat
+/api/*  https://api.fredboat.com/:splat 200
 /*    /   200
