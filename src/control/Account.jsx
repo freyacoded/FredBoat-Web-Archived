@@ -1,7 +1,7 @@
 class Account {
     static getBaseApiUrl() {
         return this.isProduction()
-        ? "https://fredboat.frederikam.com:1356/api"
+        ? "https://fredboat.com/api"
         : "http://localhost:1356";
     }
 
