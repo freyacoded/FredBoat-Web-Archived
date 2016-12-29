@@ -34,7 +34,7 @@ class Account {
             return;
         }
 
-        var request = new XMLHttpRequest();
+        const request = new XMLHttpRequest();
         request.open("GET", "https://discordapp.com/api/users/@me" , true);
         request.setRequestHeader("Authorization", "Bearer " + localStorage.bearer);
 

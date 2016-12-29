@@ -12,29 +12,39 @@ import "./index.css";
 
 //TODO: Loading screen
 
-Account.isLoggedIn(function(isLoggedIn){
-    if(isLoggedIn){
-        ReactDOM.render(
-            <Router history={browserHistory}>
-                <Route path="/manage/:serverid" component={App}/>
-                <Route path="/login" component={Login}/>
-                <Route path="/*" component={ServerSelect}/>
-            </Router>,
-            document.getElementById("appMount")
-        );
-    } else {
-        if(location.pathname === "/callback"){
-            ReactDOM.render(
-                <Callback />,
-                document.getElementById("appMount")
-            );
-            Callback.handleCallback();
-        } else {
-            ReactDOM.render(
-                <Login />,
-                document.getElementById("appMount")
-            );
-        }
+console.log("Loading");
 
+class Index {
+    static render() {
+        Account.isLoggedIn(function(isLoggedIn) {
+            if (isLoggedIn) {
+                ReactDOM.render(
+                    <Router history={browserHistory}>
+                        <Route path="/manage/:serverid" component={App}/>
+                        <Route path="/login" component={Login}/>
+                        <Route path="/*" component={ServerSelect}/>
+                    </Router>,
+                    document.getElementById("appMount")
+                );
+            } else {
+                if (location.pathname === "/callback") {
+                    ReactDOM.render(
+                        <Callback />,
+                        document.getElementById("appMount")
+                    );
+                    Callback.handleCallback();
+                } else {
+                    ReactDOM.render(
+                        <Login />,
+                        document.getElementById("appMount")
+                    );
+                }
+
+            }
+        });
     }
-});
+}
+
+Index.render();
+
+export default Index;
