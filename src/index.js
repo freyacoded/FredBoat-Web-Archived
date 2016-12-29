@@ -34,6 +34,7 @@ class Index {
                     );
                     Callback.handleCallback();
                 } else {
+                    browserHistory.push("/login")
                     ReactDOM.render(
                         <Login />,
                         document.getElementById("appMount")
