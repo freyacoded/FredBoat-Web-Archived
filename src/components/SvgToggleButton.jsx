@@ -45,7 +45,7 @@ class SvgToggleButton extends Component {
         if(this.props.onClick){
             this.props.onClick(this);
         }
-    }
+    };
 
     componentDidMount() {
         Snap.load(SvgIconConfig[this.props.type].url, (svg) => {

@@ -4,7 +4,7 @@ import { Router, Route, browserHistory } from "react-router";
 
 import App from "./module/App";
 import ServerSelect from "./module/ServerSelect";
-import Login from "./module/Login";
+import Index from "./module/Index";
 import Callback from "./module/Callback";
 
 import Account from "./control/Account";
@@ -14,15 +14,15 @@ import "./index.css";
 
 console.log("Loading");
 
-class Index {
+class Routing {
     static render() {
         Account.isLoggedIn(function(isLoggedIn) {
             if (isLoggedIn) {
                 ReactDOM.render(
                     <Router history={browserHistory}>
                         <Route path="/manage/:serverid" component={App}/>
-                        <Route path="/login" component={Login}/>
-                        <Route path="/*" component={ServerSelect}/>
+                        <Route path="/manage" component={ServerSelect}/>
+                        <Route path="/" component={Index}/>
                     </Router>,
                     document.getElementById("appMount")
                 );
@@ -34,9 +34,9 @@ class Index {
                     );
                     Callback.handleCallback();
                 } else {
-                    browserHistory.push("/login")
+                    browserHistory.push("/")
                     ReactDOM.render(
-                        <Login />,
+                        <Index />,
                         document.getElementById("appMount")
                     );
                 }
@@ -46,6 +46,6 @@ class Index {
     }
 }
 
-Index.render();
+Routing.render();
 
-export default Index;
+export default Routing;

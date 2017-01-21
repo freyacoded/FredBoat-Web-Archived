@@ -1,55 +1,51 @@
-/*#appMount {
-    width: 100%;
+.indexBox {
+    display: flex;
+    flex-flow: column;
     height: 100%;
-}*/
+}
 
-.loginBack {
-    background-color: #1CBFE2;
-    height: 100vh;
+.loginTitle {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 40px;
+    color: #2C2C2C;
+    font-family: 'Fugaz One', sans-serif;
+}
+
+.loginDiscordLogo {
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
 }
 
 .logoDiv {
-    /*background-color: red;*/
-    height: 30vh;
-    width: 60vh;
-    margin-top: 5vh;
+    height: 200px;
+    width: 100%;
+    background-color: #1CBFE2;
+    padding-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    vertical-align: baseline;
     align-items: center;
-    font-size: 25vh;
+    display: flex;
+    justify-content: center;
 }
 
 .fbLogo {
-    width: 33.33%;
-    /*padding-bottom: 33.33%;*/
-    /*height: 20vh;*/
-    display: inline-block;
+    width: 180px;
 }
 
-.discordLogo {
-    width: 20vh;
-    height: 20vh;
-    display: inline-block;
+.indexBody {
+    flex: 1 1 auto;
 }
 
-.loginPlus {
-    display: inline-block;
+#indexFeatures {
+    background-color: #2C2F33;
     color: white;
-    position: relative;
-    width: 20vh;
-    height: 20vh;
-    text-align: center;
-    line-height: 100%;
-    left: 1%;
-    bottom: 3.5%;
-    user-select: none;
-    cursor: default;
-}
-
-.loginBody {
-    height: calc(65vh - 32px - 64px);
-    background-color: #FFFFFF;
+    flex: 0 1 40px;
 }
 
 .loginText {
