@@ -6,8 +6,10 @@ import "./css/Index.css";
 
 class Index extends Component {
     render() {
+        document.body.style.overflow = "hidden";
+
         return (
-            <div className="loginBack">
+            <div className="indexMount">
                 <header className="header">
                     <div id="UserDisplay"></div>
                     <div className="title">FredBoat</div>
@@ -22,7 +24,7 @@ class Index extends Component {
 
                 </section>
 
-                <section id="indexFeatures">
+                <section id="indexFeatures" style={{height: "1000px"}}>
                     <div>
                         <div className="loginText">
                             Log in to Discord to manage FredBoat on your server.
@@ -45,6 +47,9 @@ class Index extends Component {
         const element = document.getElementById("indexFeatures");
         if(element) {
             element.style["min-height"] = (document.body.clientHeight - element.offsetTop) + "px";
+            element.style["overflow"] = "visible";
+            element.style["height"] = null;
+            document.body.style.overflow = "visible";
         }
     }
 
