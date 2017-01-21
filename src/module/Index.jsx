@@ -41,12 +41,18 @@ class Index extends Component {
         );
     }
 
+    static resizeFeaturesDiv() {
+        const element = document.getElementById("indexFeatures");
+        if(element) {
+            element.style["min-height"] = (document.body.clientHeight - element.offsetTop) + "px";
+        }
+    }
+
     componentDidMount() {
-        setTimeout(function(){
-            const element = document.getElementById("indexFeatures");
-            element.style.height = (document.body.clientHeight - element.offsetTop) + "px";
-        }, 1);
+        setTimeout(Index.resizeFeaturesDiv, 1);
     }
 }
+
+document.body.onresize = Index.resizeFeaturesDiv;
 
 export default Index;
