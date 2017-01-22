@@ -49,7 +49,7 @@
 }
 
 .loginText {
-    padding-top: 48px;
+    padding-top: 64px;
     font-weight: bold;
     font-family: Roboto, sans-serif;
     font-size: 24px;
@@ -82,4 +82,50 @@
 
 .authButton:hover {
     background-color: #546bbf;
+}
+
+.indexFeaturesHeader {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 40px;
+    color: #FFF;
+    font-family: 'Fugaz One', sans-serif;
+}
+
+.featuresFlexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.featureBox {
+    width: 350px;
+    padding: 30px;
+    margin: 20px;
+    position: relative;
+    bottom: 20px;
+
+    /* Text */
+    font-size: 22px;
+}
+
+.featureBox > h1 {
+    margin-top: 0;
+    margin-bottom: 3px;
+    margin-left: 10px;
+}
+
+.featureTitle {
+    margin-left: 15px;
+}
+
+.indexTitleUnderline {
+    background-color: white;
+    height: 3px;
+    margin-bottom: 10px;
+}
+
+.featureBox a {
+    text-decoration: underline;
 }

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import FontAwesome from "react-fontawesome";
 import Account from "../control/Account";
 import logo from "../../public/logo.svg";
 import discordLogo from "../../public/svg/discord.svg";
@@ -6,12 +7,11 @@ import "./css/Index.css";
 
 class Index extends Component {
     render() {
-        document.body.style.overflow = "hidden";
-
         return (
             <div className="indexMount">
                 <header className="header">
                     <div id="UserDisplay"></div>
+                    <i className="fa fa_music fa-lg"/>
                     <div className="title">FredBoat</div>
                 </header>
                 <section className="indexBody">
@@ -24,7 +24,7 @@ class Index extends Component {
 
                 </section>
 
-                <section id="indexFeatures" style={{height: "1000px"}}>
+                <section id="indexFeatures" style={{height: "500px"}}>
                     <div>
                         <div className="loginText">
                             Log in to Discord to manage FredBoat on your server.
@@ -38,7 +38,47 @@ class Index extends Component {
                     }>
                         Authenticate with Discord
                     </a>
+
+                    <p className="indexFeaturesHeader">Why use FredBoat?</p>
+                    <div className="featuresFlexbox">
+                        <FeatureFlexItem
+                            title="Great audio"
+                            icon="music"
+                            text="Support for YouTube, Soundcloud, Bandcamp, Twitch, Vimeo and direct file links. All of which streamed at minimal or no loss of quality. You can even link directly to raw audio files."
+                        />
+                        <FeatureFlexItem
+                            title="Shuffle and repeat"
+                            icon="random"
+                            text="FredBoat supprots shuffling and repeating your playlist. It's not unheard of to shuffle a thousand tracks at once!"
+                        />
+                        <FeatureFlexItem
+                            title="Free and unlimited"
+                            icon="gift"
+                            text="Like Discord, FredBoat is available completely free of charge. There's no catch, I just like what I am doing."
+                        />
+                        <FeatureFlexItem
+                            title="Playlists"
+                            icon="list"
+                            text="Play your YouTube and Soundcloud playlists with just one command. FredBoat also supports exporting your playlist for later use!"
+                        />
+                        <FeatureFlexItem
+                            title="Stream support"
+                            icon="bolt"
+                            text="FredBoat will allow you to tune in to your favorite radio station with a .m3u or .pls file. Keep a look out for those files when trying to play radio."
+                        />
+                        <FeatureFlexItem
+                            title="Open source"
+                            icon="code-fork"
+                            text={<div>FredBoat is hosted <a href="https://github.com/Frederikam/FredBoat\">on GitHub</a> and I would ❤ corrections and improvements!</div>}
+                        />
+                        <FeatureFlexItem
+                            title="Selfhosting"
+                            icon="server"
+                            text={<div>If you really insist, you can host FredBoat on your own hardware! Check out our <a href="http://docs.frederikam.com/selfhosting">selfhosting guide</a>.</div>}
+                        />
+                    </div>
                 </section>
+
             </div>
         );
     }
@@ -47,14 +87,31 @@ class Index extends Component {
         const element = document.getElementById("indexFeatures");
         if(element) {
             element.style["min-height"] = (document.body.clientHeight - element.offsetTop) + "px";
-            element.style["overflow"] = "visible";
             element.style["height"] = null;
-            document.body.style.overflow = "visible";
+            document.body.style["overflow"] = null;
         }
     }
 
     componentDidMount() {
         setTimeout(Index.resizeFeaturesDiv, 1);
+    }
+}
+
+class FeatureFlexItem extends Component {
+
+    render() {
+        return (
+            <div className="featureFlexItem">
+                <div className="featureBox">
+                    <h1>
+                        <FontAwesome name={this.props.icon}/>
+                        <span className="featureTitle">{this.props.title}</span>
+                    </h1>
+                    <div className="indexTitleUnderline"></div>
+                    {this.props.text}
+                </div>
+            </div>
+        )
     }
 }
 
