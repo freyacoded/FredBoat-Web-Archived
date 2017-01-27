@@ -24,20 +24,21 @@ class Index extends Component {
 
                 </section>
 
-                <section id="indexFeatures" style={{height: "500px"}}>
-                    <div>
-                        <div className="loginText">
-                            Log in to Discord to manage FredBoat on your server.
-                            <p>(No not really, this site is just a preview.)</p>
-                        </div>
+                <div>
+                    <div className="loginText">
+                        Add FredBoat to your server
                     </div>
+                </div>
 
-                    <a className="authButton" href={
-                        Account.isProduction() ? "https://discordapp.com/api/oauth2/authorize?response_type=code&client_id=168686772216135681&scope=identify guilds&redirect_uri=http%3A%2F%2Ffredboat.com%2Fcallback&access_type=offline"
-                            : "https://discordapp.com/api/oauth2/authorize?response_type=code&client_id=168672778860494849&scope=identify guilds&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fcallback&access_type=offline"
-                    }>
-                        Authenticate with Discord
-                    </a>
+                <a className="authButton" href={
+                    "https://discordapp.com/oauth2/authorize?&client_id=184405253028970496&scope=bot"
+                    //Account.isProduction() ? "https://discordapp.com/api/oauth2/authorize?response_type=code&client_id=168686772216135681&scope=identify guilds&redirect_uri=http%3A%2F%2Ffredboat.com%2Fcallback&access_type=offline"
+                    //    : "https://discordapp.com/api/oauth2/authorize?response_type=code&client_id=168672778860494849&scope=identify guilds&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fcallback&access_type=offline"
+                }>
+                    Authenticate with Discord
+                </a>
+
+                <section id="indexFeatures" style={{height: "500px"}}>
 
                     <p className="indexFeaturesHeader">Why use FredBoat?</p>
                     <div className="featuresFlexbox">
