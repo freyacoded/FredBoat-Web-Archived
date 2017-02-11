@@ -50,7 +50,7 @@ class Index extends Component {
                         <FeatureFlexItem
                             title="Shuffle and repeat"
                             icon="random"
-                            text="FredBoat supprots shuffling and repeating your playlist. It's not unheard of to shuffle a thousand tracks at once!"
+                            text="FredBoat supports shuffling and repeating your playlist. It's not unheard of to shuffle a thousand tracks at once!"
                         />
                         <FeatureFlexItem
                             title="Free and unlimited"
