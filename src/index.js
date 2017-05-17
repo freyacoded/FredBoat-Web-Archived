@@ -10,6 +10,9 @@ import Callback from "./module/Callback";
 import Account from "./control/Account";
 import "./index.css";
 
+// Redirect with force
+window.location = "https://docs.fredboat.com";
+
 //TODO: Loading screen
 
 console.log("Loading");
