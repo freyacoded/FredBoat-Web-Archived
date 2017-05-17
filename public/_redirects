@@ -1,2 +1,3 @@
 /api/*  https://api.fredboat.com/:splat 200
-/*    /   200
+#/*    /   200
+/* https://docs.fredboat.com/ 301
